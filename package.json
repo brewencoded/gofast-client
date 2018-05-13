@@ -1,25 +1,21 @@
 {
+  "scripts": {
+    "dev": "webpack --config ./webpack/webpack.config.dev.js",
+    "build": "webpack --config ./webpack/webpack.config.prod.js"
+  },
+  "dependencies": {
+    "ts-loader": "^4.3.0",
+    "typescript": "^2.8.3",
+    "webpack": "^4.8.3"
+  },
   "name": "gofast-client",
   "version": "0.1.0",
-  "description": "Client side of gofast project",
+  "description": "Client side of the gofast app",
   "main": "index.js",
-  "scripts": {
-    "test": "mocha"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/brewencoded/gofast-client.git"
-  },
-  "keywords": [
-    "React",
-    "TypeScript",
-    "Redux",
-    "GraphQL"
-  ],
-  "author": "brewencoded",
+  "repository": "git@github.com:brewencoded/gofast-client.git",
+  "author": "brewencoded <brewencoded@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/brewencoded/gofast-client/issues"
-  },
-  "homepage": "https://github.com/brewencoded/gofast-client#readme"
+  "devDependencies": {
+    "webpack-cli": "^2.1.3"
+  }
 }
