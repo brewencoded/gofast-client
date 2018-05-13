@@ -9,8 +9,8 @@ import Home from '../src/Home'
 
 const homeComponent = shallow(<Home />)
 
-describe('Sanity test enzyme', () => {
-    it('should pass', () => {
+describe('Home page', () => {
+    it('should contain a div with text', () => {
         expect(homeComponent.equals(<div>Hello React!</div>)).to.be.true
     })
 })

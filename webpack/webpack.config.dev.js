@@ -5,4 +5,7 @@ module.exports = Object.assign(webpackCommon, {
   target: "web",
   watch: true,
   mode: "development",
+  devServer: {
+    contentBase: './dist'
+  },
 });
