@@ -2,6 +2,6 @@ import * as React from 'react'
 import { render } from "react-dom";
 import Home from './Home'
 
-render(<Index />, document.getElementById("index"));
+render(<Home />, document.getElementById("index"));
 
-export default Index
+export default Home
