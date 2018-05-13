@@ -26,3 +26,4 @@ pids
 # directories
 dist
 temp
+.nyc_output
