@@ -1,11 +1,10 @@
 {
   "scripts": {
-    "dev": "webpack-dev-server --open --config ./webpack/webpack.config.dev.js",
+    "dev": "node webpack/dev-server.js",
     "build": "webpack --config ./webpack/webpack.config.prod.js",
     "test": "nyc mocha --require ts-node/register test/**/*.spec.*"
   },
   "dependencies": {
-    "@types/enzyme-adapter-react-16": "^1.0.2",
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
   },
@@ -18,21 +17,25 @@
   "license": "MIT",
   "devDependencies": {
     "@types/chai": "^4.1.3",
+    "@types/enzyme-adapter-react-16": "^1.0.2",
     "@types/mocha": "^5.2.0",
     "@types/react": "^16.3.14",
     "@types/react-dom": "^16.0.5",
     "chai": "^4.1.2",
+    "css-loader": "^0.28.11",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "html-webpack-plugin": "^3.2.0",
     "mocha": "^5.1.1",
     "nyc": "^11.7.3",
     "sinon": "^5.0.7",
+    "style-loader": "^0.21.0",
     "ts-loader": "^4.3.0",
     "ts-node": "^6.0.3",
     "typescript": "^2.8.3",
     "webpack": "^4.8.3",
     "webpack-cli": "^2.1.3",
+    "webpack-dev-middleware": "^3.1.3",
     "webpack-dev-server": "^3.1.4"
   },
   "nyc": {
