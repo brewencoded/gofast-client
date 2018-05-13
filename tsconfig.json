@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
     "allowJs": true,
+    "allowSyntheticDefaultImports": true,
     "jsx": "react",
-    "module": "es6",
-    "noImplicitAny": true,
+    "module": "commonjs",
+    "noImplicitAny": false,
     "outDir": "./dist/",
     "sourceMap": true,
     "target": "es5",
