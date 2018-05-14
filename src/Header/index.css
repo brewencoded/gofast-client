@@ -1,0 +1,40 @@
+#header {
+    width: 100%;
+    height: 3em;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0em .1em .1em lightgrey;
+    line-height: 3;
+}
+
+#header h1 {
+    margin-left: 1em;
+    margin-right: 0;
+    flex-grow: 1;
+    flex-direction: row;
+}
+
+#search {
+    flex-grow: 3;
+    flex-direction: row;
+}
+
+#search input {
+    flex-grow: 6;
+    text-align: right;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+#search input:focus {
+    text-align: left;
+    margin-left: 1em;
+}
+
+#search-icon {
+    flex-grow: 1;
+    height: 1em;
+    text-align: right;
+    margin-right: 1em;
+}
+
