@@ -1,24 +1,18 @@
 import * as React from 'react'
+import SearchBar from './SearchBar'
+
 const Styles = require('./index.css')
-
-const SearchStyleDefault: React.CSSProperties = {
-}
-
-const SearchStyleFull: React.CSSProperties = {
-    ...SearchStyleDefault,
-
-}
 
 export interface HeaderProps {
 }
 export interface HeaderState {
-    titleVisible: boolean
+    titleVisible: boolean;
 }
 export default class Header extends React.Component<HeaderProps, HeaderState> {
     constructor(props: HeaderProps) {
         super(props)
         this.state = {
-            titleVisible: true
+            titleVisible: true,
         }
         this.toggleTitle = this.toggleTitle.bind(this)
     }
@@ -32,12 +26,7 @@ export default class Header extends React.Component<HeaderProps, HeaderState> {
         return (
             <header id="header" className="container">
                 {title}
-                <div id="search" className="container">
-                    <input type="text" onFocus={this.toggleTitle} onBlur={this.toggleTitle} placeholder="Search"/>
-                    <div id="search-icon">
-                        <i className="fa fa-search"></i>
-                    </div>
-                </div>
+                <SearchBar titleVisible={this.state.titleVisible} toggleTitle={this.toggleTitle} />
             </header>
         )
     }
