@@ -1,0 +1,9 @@
+.tab-view .tab {
+    flex-grow: 1;
+    line-height: 3;
+    text-align: center;
+}
+
+.tab-view .tab:hover {
+    cursor: pointer;
+}
