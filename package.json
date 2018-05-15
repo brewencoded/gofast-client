@@ -5,7 +5,9 @@
     "test": "nyc mocha --require ts-node/register test/**/*.spec.*"
   },
   "dependencies": {
+    "moment": "^2.22.1",
     "react": "^16.3.2",
+    "react-datepicker": "^1.4.1",
     "react-dom": "^16.3.2"
   },
   "name": "gofast-client",
