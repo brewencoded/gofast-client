@@ -9,7 +9,7 @@ const DatePickerStyle = require('react-datepicker/dist/react-datepicker.css')
 const FiltersView: React.SFC<any> = (props: any) => {
 
     return (
-        <div>
+        <div className="filters">
             <div className="filter container">
                 <h3>Price</h3>
                 <div>
