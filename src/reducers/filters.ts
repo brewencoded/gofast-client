@@ -1,7 +1,7 @@
 import * as moment from 'moment'
 
 import {
-    SAVE_FILTERS
+    UPDATE_FILTERS
 } from '../constants'
 
 const DefaultState = {
@@ -28,7 +28,7 @@ const filterReducer = (state=DefaultState, action: any) => {
         return state
     }
     switch(action.type) {
-        case 'SAVE':
+        case UPDATE_FILTERS:
             return action.payload
         default:
             return state

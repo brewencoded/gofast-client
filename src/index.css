@@ -43,8 +43,14 @@ table {
 	border-spacing: 0;
 }
 
-input {
-    outline: none;
+button, input {
+	outline: none;
+	border-image: none;
+}
+
+button {
+	border-color: none;
+	border-style: none;
 }
 
 /*********** Font Awesome **********/

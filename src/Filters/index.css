@@ -56,9 +56,37 @@
     width: 100%;
 }
 
+.save-button-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.filters .save-button {
+    background-color: #da2e2c;
+    color: white;
+    font-size: 1.25em;
+    border-radius: .2em;
+    padding: 1em 2em 1em 2em;
+    margin: 2em .5em 2em .5em;
+    width: 100%;
+    max-width: 20em;
+}
+
+.filters .save-button:active {
+    background-color: #851e1c;
+}
+
+.filters .save-button:hover {
+    cursor: pointer;
+}
+
 @media screen and (min-width: 600px) {
     .filter>* {
         width: 6em;
+    }
+    .save-button-wrapper {
+        justify-content: left;
     }
 }
 

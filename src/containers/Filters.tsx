@@ -6,6 +6,8 @@ const mapStateToProps = (storeState) => ({
     filters: storeState.filters
 })
 
-const mapDispatchToProps = (dispatch) => ({})
+const mapDispatchToProps = (dispatch) => ({
+    saveFilters: (filters: any) => dispatch(filters)
+})
 
 export default connect(mapStateToProps, mapDispatchToProps)(Filters)
