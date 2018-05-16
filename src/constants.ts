@@ -1,1 +1,1 @@
-export const SAVE_FILTERS = 'SAVE_FILTERS'
+export const UPDATE_FILTERS = 'UPDATE_FILTERS'
