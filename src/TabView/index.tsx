@@ -27,7 +27,7 @@ export default class TabView extends React.Component<TabViewProps, {}> {
                 <div className="tab-bar container">
                     {tabs}
                 </div>
-                <ActiveView/>
+                <ActiveView activeTab={activeTab.title}/>
             </div>
         )
     }
