@@ -1,7 +1,11 @@
 #footer {
     position: absolute;
     bottom: 0;
-    height: 1em;
+    height: 3em;
     width: 100%;
-    background-color: aliceblue;
+    background-color: white;
+    box-shadow: .0em -.1em .1em lightgray;
+    text-align: center;
+    line-height: 3em;
+    color: grey;
 }

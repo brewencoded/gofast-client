@@ -3,6 +3,6 @@ const Styles = require('./index.css')
 
 export default (props) => (
     <footer id="footer">
-        <p>Footer</p>
+        <p>Inventory App</p>
     </footer>
 )
