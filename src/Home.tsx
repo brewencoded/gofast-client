@@ -7,7 +7,7 @@ const Home = (props) => {
     return (
         <div>
             <Header />
-            <TabView tabs={props.navigation}/>
+            <TabView tabs={props.navigation} navigate={props.navigate}/>
             <Footer />
         </div>
     )

@@ -8,14 +8,14 @@ import {
 const DefaultState = [
     { title: 'Filters', active: false, view: FiltersView},
     { title: 'ID', active: true, view: ListView},
-    { title: 'Description', active: false},
-    { title: 'Dept.', active: false},
-    { title: 'Last Sold', active: false},
-    { title: 'Shelf Life', active: false},
-    { title: 'Price', active: false},
-    { title: 'Unit', active: false},
-    { title: 'xFor', active: false},
-    { title: 'Cost', active: false},
+    { title: 'Description', active: false, view: ListView},
+    { title: 'Dept.', active: false, view: ListView},
+    { title: 'Last Sold', active: false, view: ListView},
+    { title: 'Shelf Life', active: false, view: ListView},
+    { title: 'Price', active: false, view: ListView},
+    { title: 'Unit', active: false, view: ListView},
+    { title: 'xFor', active: false, view: ListView},
+    { title: 'Cost', active: false, view: ListView},
 ]
 const navigationReducer = (state=DefaultState, action: any) => {
     if (!action || Object.keys(action).length === 0) {

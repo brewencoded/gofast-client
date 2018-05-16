@@ -9,7 +9,8 @@ export interface TabDescriptor {
 }
 
 export interface TabViewProps {
-    tabs: Array<TabDescriptor>
+    tabs: Array<TabDescriptor>;
+    navigate: (title: string) => void;
 }
 export default class TabView extends React.Component<TabViewProps, {}> {
     constructor(props: TabViewProps) {
@@ -18,7 +19,7 @@ export default class TabView extends React.Component<TabViewProps, {}> {
         this.setState = this.setState.bind(this)
     }
     render() {
-        const tabs = this.props.tabs.map((tab, idx) => <Tab key={'tab-' + idx} {...tab}/>)
+        const tabs = this.props.tabs.map((tab, idx) => <Tab key={'tab-' + idx} navigate={this.props.navigate} {...tab}/>)
         const activeTab: TabDescriptor = this.props.tabs.find((tab) => tab.active)
         const ActiveView = activeTab.view
         return (
