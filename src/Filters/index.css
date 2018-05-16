@@ -1,0 +1,36 @@
+.filter {
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+.filter>* {
+    width: 4em;
+    margin: 0.5em;
+}
+
+.filter p {
+    width: 2em;
+    margin: 0;
+}
+
+.filter input {
+    border: none;
+    border-bottom: .1em solid lightgray;
+    width: 100%;
+}
+
+
+.filter .switch-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
+.react-datepicker-wrapper input {
+    width: 100%;
+}

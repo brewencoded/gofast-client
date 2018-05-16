@@ -43,6 +43,10 @@ table {
 	border-spacing: 0;
 }
 
+input {
+    outline: none;
+}
+
 /*********** Font Awesome **********/
 i {
     font-family: fontawesome !important;

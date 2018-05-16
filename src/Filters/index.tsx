@@ -7,24 +7,56 @@ const Styles = require('./index.css')
 const DatePickerStyle = require('react-datepicker/dist/react-datepicker.css')
 
 const FiltersView: React.SFC<any> = (props: any) => {
+
     return (
         <div>
-            <div className="filter">
+            <div className="filter container">
                 <h3>Price</h3>
-                <input type="text"/>
-                <Switch on={true} onClick={() => {}}/>
+                <div>
+                    <input placeholder="$0.0" className="filter-input" type="text"/>
+                </div>
+                <p>to</p>
+                <div>
+                    <input placeholder="$100.00" className="filter-input" type="text"/>
+                </div>
+                <div className="switch-wrapper">
+                    <Switch on={true} onClick={() => {}}/>
+                </div>
             </div>
-            <div className="filter">
+            <div className="filter container">
                 <h3>Cost</h3>
-                <input type="text"/>
+                <div>
+                    <input placeholder="$0.0" className="filter-input" type="text"/>
+                </div>
+                <p>to</p>
+                <div>
+                    <input placeholder="$100.00" className="filter-input" type="text"/>
+                </div>
+                <div className="switch-wrapper">
+                    <Switch on={true} onClick={() => {}}/>
+                </div>
             </div>
-            <div className="filter">
+            <div className="filter container">
                 <h3>Last Sold</h3>
                 <DatePicker />
+                <p>-</p>
+                <DatePicker />
+                <div className="switch-wrapper">
+                    <Switch on={true} onClick={() => {}}/>
+                </div>
             </div>
-            <div className="filter">
+            <div className="filter container">
                 <h3>Shelf Life</h3>
-                <input type="text"/>
+                <div>
+                    <input placeholder="1d" className="filter-input" type="text"/>
+                </div>
+                <p>to</p>
+                <div>
+                    <input placeholder="3d" className="filter-input" type="text"/>
+                </div>
+                <div className="switch-wrapper">
+                    <Switch on={true} onClick={() => {}}/>
+                </div>
             </div>
         </div>
     )
