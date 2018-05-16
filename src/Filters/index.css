@@ -1,4 +1,11 @@
+.filters {
+    display: flex;
+    margin-top: 2em;
+    flex-direction: column;
+}
+
 .filter {
+    margin-top: 1em;
     flex-direction: row;
     text-align: center;
     align-items: center;
@@ -31,6 +38,53 @@
     align-items: center;
 }
 
+.react-datepicker-wrapper {
+    width: 100%;
+}
+
+.react-datepicker__input-container {
+    width: 100%;
+}
+
 .react-datepicker-wrapper input {
     width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    .filter>* {
+        width: 6em;
+        margin: 0.5em;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    .filters {
+        margin-left: 2em;
+    }
+
+    .filter h3 {
+        text-align: left;
+        width: 100%;
+    }
+
+    .filter>* {
+        width: 10em;
+        margin: 0.5em;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .filters {
+        margin-left: 4em;
+    }
+
+    .filter>* {
+        width: 16em;
+        margin: 0.5em;
+    }
+    
+    .filter h3 {
+        text-align: left;
+        width: 100%;
+    }
 }

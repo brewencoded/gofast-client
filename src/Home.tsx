@@ -10,6 +10,10 @@ const Home = () => {
         { title: 'ID', active: false},
         { title: 'Description', active: false},
         { title: 'Department', active: false},
+        { title: 'Last Sold', active: false},
+        { title: 'Shelf Life', active: false},
+        { title: 'Price', active: false},
+        { title: 'Cost', active: false},
     ]
     return (
         <div>
