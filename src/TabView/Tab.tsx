@@ -5,6 +5,7 @@ export interface TabProps {
     title: string;
     view?: any;
     active: boolean;
+    navigate: (title: string) => void;
 }
 
 export default (props: TabProps) => {
@@ -15,8 +16,12 @@ export default (props: TabProps) => {
         color: '#888',
     } as  React.CSSProperties
     const borderStyle = props.active ? activeStyle : inactiveStyle
+    const navigate = () => props.navigate(props.title)
     return (
-        <div className="tab" style={borderStyle}>
+        <div
+            className="tab"
+            style={borderStyle}
+            onClick={navigate}>
             {props.title}
         </div>
     )
