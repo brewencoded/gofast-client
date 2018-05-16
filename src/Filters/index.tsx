@@ -11,6 +11,7 @@ class FiltersView extends React.Component<any, any> {
         super(props)
         this.state = props.filters
         this.update = this.update.bind(this)
+        this.dispatchUpdate = this.dispatchUpdate.bind(this)
     }
     update(name) {
         return (change) => {
@@ -31,6 +32,9 @@ class FiltersView extends React.Component<any, any> {
             }
         }
     }
+    dispatchUpdate() {
+        this.props.updateFilters(this.state)
+    }
     render() {
         const {
             price,
@@ -46,7 +50,7 @@ class FiltersView extends React.Component<any, any> {
                 <DateFilter name="Last Sold" range={lastSold.range} onUpdate={this.update('Last Sold')} />
                 <InputFilter name="Shelf Life" range={price.range} onUpdate={this.update('Shelf Life')} />
                 <div className="save-button-wrapper">
-                    <button className="save-button">Save</button>
+                    <button className="save-button" onClick={this.dispatchUpdate}>Save</button>
                 </div>
             </div>
         )
