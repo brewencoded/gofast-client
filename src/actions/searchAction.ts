@@ -9,7 +9,7 @@ export const searchAction = (dispatch) => async (searchQuery) => {
         const response = await axios.get(`http://localhost:5000/api/search?query=${searchQuery}`)
         dispatch({
             type: FETCH_SUCCESS,
-            payload: response.data.results
+            payload: JSON.parse(response.data.results)
         })
     } catch (e) {
         console.log(e)
