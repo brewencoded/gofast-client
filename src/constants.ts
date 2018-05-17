@@ -1,2 +1,3 @@
 export const UPDATE_FILTERS = 'UPDATE_FILTERS'
-export const NAVIGATE = "NAVIGATE"
+export const NAVIGATE = 'NAVIGATE'
+export const FETCH_SUCCESS = 'FETCH_SUCCESS'
