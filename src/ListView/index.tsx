@@ -4,7 +4,11 @@ const Style = require('./index.css')
 const order = ['ID', 'Description', 'Department', 'lastSold', 'ShelfLife', 'Price', 'Unit', 'xFor', 'Cost']
 
 export default (props) => {
-    const activeTab = props.activeTab === 'Dept.' ? 'Department' : props.activeTab
+    let activeTab = props.activeTab
+    activeTab = props.activeTab === 'Dept.' ? 'Department' : activeTab
+    activeTab = props.activeTab === 'Shelf Life' ? 'ShelfLife' : activeTab
+    activeTab = props.activeTab === 'Last Sold' ? 'lastSold' : activeTab
+
     const inventory = props.inventory ? props.inventory : []
     const list = inventory
         .sort((a, b) => compare(a[activeTab], b[activeTab]))

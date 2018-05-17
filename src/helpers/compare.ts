@@ -32,22 +32,30 @@ const compareDays = (a: string, b: string) => {
     }
     return 0;
 }
-const compareAlphaNum = (a: string, b: string) => {
-    if (a.toLowerCase() < b.toLowerCase() ) {
+const compareAlpha = (a: string, b: string) => {
+    if (a.replace(/ /g,'').toLowerCase() < b.replace(/ /g,'').toLowerCase() ) {
         return -1;
     }
-    if (a.toLowerCase() > b.toLowerCase()) {
+    if (a.replace(/ /g,'').toLowerCase() > b.replace(/ /g,'').toLowerCase()) {
         return 1;
     }
     return 0;
 }
-const compare = (first: string, second: string) => {
-    const a = first.toString()
-    const b = second.toString()
+const compareNum = (a: number, b: number) => {
+    if (a < b) {
+        return -1;
+    }
+    if (a > b) {
+        return 1;
+    }
+    return 0;
+}
+const compare = (a: any, b: any) => {
+    if (typeof a === 'number') return compareNum(a, b)
     if (a.indexOf('d') !== -1) return compareDays(a, b)
     else if (a.indexOf('$') !== -1) return compareMoney(a, b)
     else if (moment(a, 'dd/mm/yyyy', true).isValid()) return compareDate(a, b)
-    else return compareAlphaNum(a, b)
+    else return compareAlpha(a, b)
 } 
 
 export default compare
