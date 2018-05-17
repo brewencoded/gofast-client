@@ -11,7 +11,7 @@ const store = createStore(rootReducer)
 
 // initialize store
 const searchThunk = searchAction(store.dispatch)
-searchThunk(null)
+searchThunk('')
 
 const Styles = require('./index.css')
 
