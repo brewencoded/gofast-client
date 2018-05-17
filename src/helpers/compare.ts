@@ -41,7 +41,9 @@ const compareAlphaNum = (a: string, b: string) => {
     }
     return 0;
 }
-const compare = (a: string, b: string) => {
+const compare = (first: string, second: string) => {
+    const a = first.toString()
+    const b = second.toString()
     if (a.indexOf('d') !== -1) return compareDays(a, b)
     else if (a.indexOf('$') !== -1) return compareMoney(a, b)
     else if (moment(a, 'dd/mm/yyyy', true).isValid()) return compareDate(a, b)
