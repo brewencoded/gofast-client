@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import ListView from '../ListView/index'
 
 const mapStateToProps = (storeState) => ({
-    inventory: storeState.inventory.default
+    inventory: storeState.inventory
 })
 
 const mapDispatchToProps = (dispatch) => ({})
