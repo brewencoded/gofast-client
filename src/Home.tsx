@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Footer from './Footer/index'
-import Header from './Header/index'
+import Header from './containers/Header'
 import TabView from './TabView/index'
 
 const Home = (props) => {
