@@ -1,4 +1,6 @@
 .tab-bar {
+    position: fixed;
+    top: 3em;
     width: 100%;
     height: 3em;
     flex-direction: row;
